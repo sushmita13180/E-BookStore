@@ -59,7 +59,7 @@ function Signup() {
     <label htmlFor="email">Email</label>
     <br />
     <input type="email" id='email' placeholder='Enter your Email' 
-    className='outline-none border px-2 py-1 rounded-md bg-slate-100 border-slate-400'
+    className=' w-full outline-none border px-2 py-1 rounded-md bg-slate-100 border-slate-400'
     {...register("email", { required: true })}/>
     </div>
     {errors.email && <span className='text-red-400'>This field is required</span>}
@@ -67,7 +67,7 @@ function Signup() {
     <label htmlFor="password">Password</label>
     <br />
     <input type="password" id='password' placeholder='Enter your password' min={4} max={15}
-    className='outline-none border px-2 py-1 rounded-md bg-slate-100 border-slate-400'
+    className=' w-full outline-none border px-2 py-1 rounded-md bg-slate-100 border-slate-400'
     {...register("password", { required: true })} />
     </div>
     <br />
