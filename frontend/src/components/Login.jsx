@@ -65,6 +65,7 @@ function Login() {
    <div className='mt-2 text-center'> <span>Not Registered</span>
    <Link to="/signup" className='text-blue-600 ml-[10px]'><u>Signup</u></Link></div>
     </div>
+    
     </form>
   </div>
 </dialog>
