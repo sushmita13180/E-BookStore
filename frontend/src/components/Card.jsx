@@ -4,7 +4,7 @@ function Card({ card }) {
   // console.log(card);
   return (
     <div className='my-5'>
-      <div className="card w-[380px] h-[400px] text-center border rounded-xl bg-slate-200 hover:scale-105 ease-in-out duration-300 hover:shadow-lg">
+      <div className="card w-[340px] h-[380px] text-center border rounded-xl bg-slate-200 hover:scale-105 ease-in-out duration-300 hover:shadow-lg">
   <figure >
     <img
       src={card.image}

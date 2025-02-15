@@ -41,7 +41,7 @@ function Navbar() {
   }, [])
   
   return (
-    <div className={`max-w-screen-2xl container mx-auto md:px-20  fixed top-0 right-0 left-0 px-4 z-50 ${sticky?'sticky-navbar shadow-md bg-base-200 transition-all duration-300 ease-in-out ':""}` }>
+    <div className={`max-w-screen-xl container mx-auto md:px-20  fixed top-0 right-0 left-0 px-4 z-50 ${sticky?'sticky-navbar shadow-md bg-base-200 transition-all duration-300 ease-in-out ':""}` }>
       <div className="navbar ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -68,7 +68,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
       </ul>
     </div>
-    <a className=" text-2xl md:text-4xl font-semibold hover:cursor-pointer ">E-Book Store</a>
+    <a className=" text-xl md:text-4xl font-semibold hover:cursor-pointer ">E-Book Store</a>
   </div>
   <div className='navbar-end space-x-3'>
   <div className="navbar-center hidden lg:flex">
@@ -79,7 +79,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
     </ul>
   </div>
-  <div className='hidden md:block'>
+  <div className='md:block'>
   <label className="border rounded-md px-3 py-2 flex items-center gap-2">
   <input type="text" className="grow outline-none px-1 rounded-md " placeholder="Search" />
   <svg

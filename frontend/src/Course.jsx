@@ -21,7 +21,7 @@ function Course() {
     getbook();
   },[])
   return (
-    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 my-12 md:mt-24 text-center'>
+    <div className='max-w-screen-xl container mx-auto md:px-20 px-4 my-12 md:mt-24 text-center'>
       <Navbar />
       <div className='text-center mt-[70px] md:mt-6'> 
       <h1 className='text-2xl md:text-3xl  font-semibold'>We're delighted to have you <span className='text-pink-500'>Here!:)</span></h1>

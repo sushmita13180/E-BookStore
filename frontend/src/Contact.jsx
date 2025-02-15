@@ -41,7 +41,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mb-14 mt-[130px] md:mt-32 '>
+      <div className='max-w-screen-xl container mx-auto md:px-20 px-4 mb-14 mt-[130px] md:mt-32 '>
       <h1 className='text-center text-xl text-red-600'> For Any Query fill out the below form. Our team will contact you soon.</h1>
       <div className='w-[400px] border-2 rounded-md py-4 px-8 shadow-lg mt-8 mx-auto text-center'>
       <form  onSubmit={handleSubmit(onSubmit)} method="dialog">
