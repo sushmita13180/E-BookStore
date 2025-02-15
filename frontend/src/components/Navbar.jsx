@@ -45,7 +45,7 @@ function Navbar() {
       <div className="navbar ">
   <div className="navbar-start">
     <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -68,7 +68,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
       </ul>
     </div>
-    <a className=" text-lg sm:text-3xl md:text-4xl font-semibold hover:cursor-pointer ">E-Book Store</a>
+    <a className=" text-xl md:text-4xl font-semibold hover:cursor-pointer ">E-Book Store</a>
   </div>
   <div className='navbar-end space-x-3'>
   <div className="navbar-center hidden lg:flex">
@@ -79,9 +79,9 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
     </ul>
   </div>
-  <div >
-  <label className="border rounded-md px-3 py-2 flex items-center gap-2 ">
-  <input type="text" className="grow outline-none px-1 rounded-md w-[70px] md:w-[130px] " placeholder="Search" />
+  <div className='hidden md:block'>
+  <label className="border rounded-md px-3 py-2 flex items-center gap-2">
+  <input type="text" className="grow outline-none px-1 rounded-md w-[120px] " placeholder="Search" />
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
