@@ -68,7 +68,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
       </ul>
     </div>
-    <a className=" text-xl md:text-4xl font-semibold hover:cursor-pointer ">E-Book Store</a>
+    <a className=" text-lg sm:text-3xl md:text-4xl font-semibold hover:cursor-pointer ">E-Book Store</a>
   </div>
   <div className='navbar-end space-x-3'>
   <div className="navbar-center hidden lg:flex">
@@ -81,7 +81,7 @@ function Navbar() {
   </div>
   <div >
   <label className="border rounded-md px-3 py-2 flex items-center gap-2 ">
-  <input type="text" className="grow outline-none px-1 rounded-md w-[130px] " placeholder="Search" />
+  <input type="text" className="grow outline-none px-1 rounded-md w-[70px] md:w-[130px] " placeholder="Search" />
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
