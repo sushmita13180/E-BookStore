@@ -46,8 +46,8 @@ function Contact() {
       <div className='w-[400px] border-2 rounded-md py-4 px-8 shadow-lg mt-8 mx-auto text-center'>
       <form  onSubmit={handleSubmit(onSubmit)} method="dialog">
         
-        <div className='mt-4 flex justify-between'>
-          <label htmlFor="name">Name : </label>
+        <div className='mt-4 flex justify-between items-center gap-[42px]'>
+          <label htmlFor="name">Name: </label>
           <input type="text"
            id='name' 
            placeholder='Enter Your Name' 
@@ -57,8 +57,8 @@ function Contact() {
         <div className='mt1-1 mr-[-166px]'>
         {errors.name && <span className='text-red-500'>This field is required</span>}
         </div>
-        <div className='mt-3 flex justify-between'>
-          <label htmlFor="mobileno">Mobile No : </label>
+        <div className='mt-3 flex justify-between items-center gap-4'>
+          <label htmlFor="mobileno">MobileNo: </label>
           <input type="text" 
           id='mobileno'
           maxLength={10}
@@ -69,8 +69,8 @@ function Contact() {
         <div className='mt1-1 mr-[-166px]'>
         {errors.name && <span className='text-red-500'>This field is required</span>}
         </div>
-        <div className='mt-3 flex justify-between'>
-          <label htmlFor="message">Message : </label>
+        <div className='mt-3 flex justify-between items-center gap-4'>
+          <label htmlFor="message">Message: </label>
           <textarea type="text" 
           id='message'
            placeholder='Any Query' 
