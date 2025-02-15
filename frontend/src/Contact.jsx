@@ -13,7 +13,7 @@ function Contact() {
         mobileno: data.mobileno,
         message: data.message
       }
-      await axios.post("http://localhost:4001/contact",userdata)
+      await axios.post("https://e-bookstore-06wg.onrender.com/contact",userdata)
       .then((res)=>{
         console.log(res.data);
         if(res.data){
