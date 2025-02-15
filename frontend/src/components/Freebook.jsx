@@ -62,8 +62,11 @@ function Freebook() {
     <>
     <div className='max-w-screen-2xl container mx-auto md:px-20  pl-11'>
       <div><h1 className='text-2xl font-bold'>Free Offered Courses</h1>
-      <p>Here are the list of books which you can access free of cost. Lorem ipsum dolor sit amet consectetur, adiping elit erit? Suscipit quasi magnam illum!</p></div>
-    
+      <p className='mt-2 text-justify'>
+      <h1 className='text-pink-600'>Get Your FREE E-Book Today!</h1>
+Start Your Reading Journey – For Free!
+We believe that everyone should have access to great stories and knowledge, which is why we're offering a FREE E-Book for a limited time! Whether you're a fan of thrilling mysteries, captivating romance, or inspiring self-help, we’ve got something for you to enjoy – on the house.
+</p></div>
     <div>
     <Slider {...settings}>
         {book.map((card)=>(<Card card={card} key={card.id} />))}

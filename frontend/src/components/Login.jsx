@@ -31,11 +31,12 @@ function Login() {
 }
   return (
    
-<dialog id="my_modal_3" className="modal  mx-auto w-[288px]">
-  <div className="modal-box">
+<dialog id="my_modal_3" className="modal  mx-auto ">
+  <div className="modal-box border-2 rounded-md shadow-xl p-6 border-slate-200 w-[278px] mx-auto mt-20">
     <form onSubmit={handleSubmit(onSubmit)} method="dialog">
       {/* if there is a button in form, it will close the modal */}
-      <button className=" btn-sm btn-circle btn-ghost absolute right-4 top-4" onClick={()=>document.querySelector('#my_modal_3').close()}>✕</button>
+     <div className='flex flex-col gap-1'>
+     <button className=" btn-sm btn-circle btn-ghost absolute right-4 top-4" onClick={()=>document.querySelector('#my_modal_3').close()}>✕</button>
     <h3 className="font-bold text-lg">Login</h3>
     <div className='mt-5'>
     <label htmlFor="email">Email</label>
@@ -46,7 +47,6 @@ function Login() {
      className='outline-none border px-2 py-1 rounded-md bg-slate-100 border-slate-400'
      {...register("email", { required: true })} />
     </div>
-    <br />
     {errors.email && <span className='text-red-400'>This field is required</span>}
     <div className="mt-4">
     <label htmlFor="password">Password</label>
@@ -58,10 +58,10 @@ function Login() {
      className='outline-none border px-2 py-1 rounded-md bg-slate-100 border-slate-400'
      {...register("password", { required: true })}/>
     </div>
-    <br />
     {errors.password && <span className='text-red-400'>This field is required</span>}
     <div className='mt-4'>
-    <button className='bg-pink-600 text-white rounded-md px-2 py-1 ml-[72px]'>Login</button>
+     </div>
+    <button className='bg-pink-600 text-white rounded-md px-1 py-1 w-20'>Login</button>
    <div className='mt-2 text-center'> <span>Not Registered</span>
    <Link to="/signup" className='text-blue-600 ml-[10px]'><u>Signup</u></Link></div>
     </div>

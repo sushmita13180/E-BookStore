@@ -4,8 +4,12 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import Footer from './components/Footer';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Contact() {
+  const location = useLocation();
+  const navigate =useNavigate();
+  const from = location.state?.from?.pathname || '/';
   const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = async (data) =>{
       const userdata={
@@ -15,9 +19,13 @@ function Contact() {
       }
       await axios.post("http://localhost:4001/contact",userdata)
       .then((res)=>{
-        console.log(res.data);
+        // console.log(res.data);
         if(res.data){
-          toast.success(' Data Submitted Successfully '); 
+          toast.success(' Data Submitted Successfully ');
+          setTimeout(() => {
+            navigate(from, {replace:true});
+            window.location.reload();
+          }, 2000); 
         }
         setTimeout(() => {
           window.location.reload();
@@ -33,11 +41,11 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <div className='max-w-screen-2xl container mx-auto md:px-20 px-4  my-12 md:mt-32 '>
+      <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mb-14 mt-[130px] md:mt-32 '>
       <h1 className='text-center text-xl text-red-600'> For Any Query fill out the below form. Our team will contact you soon.</h1>
       <div className='w-[400px] border-2 rounded-md py-4 px-8 shadow-lg mt-8 mx-auto text-center'>
       <form  onSubmit={handleSubmit(onSubmit)} method="dialog">
-        {/* <h1 className='text-3xl text-gray-600 text-center font-semibold underline'>Contact Me</h1> */}
+        
         <div className='mt-4 flex justify-between'>
           <label htmlFor="name">Name : </label>
           <input type="text"
