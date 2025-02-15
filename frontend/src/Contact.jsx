@@ -51,7 +51,7 @@ function Contact() {
           <input type="text"
            id='name' 
            placeholder='Enter Your Name' 
-           className='px-3 py-2 outline-none border rounded-md' 
+           className='w-full px-3 py-2 outline-none border rounded-md' 
            {...register("name", { required: true })} />
         </div>
         <div className='mt1-1 mr-[-166px]'>
@@ -63,7 +63,7 @@ function Contact() {
           id='mobileno'
           maxLength={10}
           placeholder='Enter Your Mobile No.' 
-          className='px-3 py-2 outline-none border rounded-md'
+          className=' w-full px-3 py-2 outline-none border rounded-md'
           {...register("mobileno", { required: true})}  />
         </div>
         <div className='mt1-1 mr-[-166px]'>
@@ -75,7 +75,7 @@ function Contact() {
           id='message'
            placeholder='Any Query' 
            rows={3} cols={23} 
-           className='px-3 py-2 outline-none border rounded-md'
+           className='w-full px-3 py-2 outline-none border rounded-md'
            {...register("message", { required: true })} />
         </div>
         <div className='mt1-1 mr-[-166px]'>
