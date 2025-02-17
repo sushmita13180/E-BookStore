@@ -60,14 +60,14 @@ function Freebook() {
   };
   return (
     <>
-    <div className='max-w-screen-xl container mx-auto md:px-20 px-4 my-12 md:mt-24 '>
+    <div className='max-w-screen-xl container md:px-20 px-4 my-12 md:mt-24 mx-auto'>
       <div><h1 className='text-2xl font-bold'>Free Offered Courses</h1>
       <p className='mt-2 text-justify'>
       <h1 className='text-pink-600'>Get Your FREE E-Book Today!</h1>
 Start Your Reading Journey – For Free!
 We believe that everyone should have access to great stories and knowledge, which is why we're offering a FREE E-Book for a limited time! Whether you're a fan of thrilling mysteries, captivating romance, or inspiring self-help, we’ve got something for you to enjoy – on the house.
 </p></div>
-    <div>
+    <div className='max-w-screen-xl container mx-auto md:px-20 px-4 my-3 '>
     <Slider {...settings}>
         {book.map((card)=>(<Card card={card} key={card.id} />))}
       </Slider>
