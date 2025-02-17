@@ -11,10 +11,12 @@ function Card({ card }) {
       alt="Shoes" />
   </figure>
   <div className="card-body">
-    <h2 className="card-title">
-      {card.name}
+   <div className='flex justify-between'>
+   <div className="card-title">
+      {card.name}</div>
       <div className="badge badge-secondary">Free</div>
-    </h2>
+    
+   </div>
     <p className='text-left'>{card.title}</p>
     <div className="card-actions justify-between">
       <div className="badge badge-outline">{card.price}</div>
