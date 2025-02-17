@@ -68,7 +68,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
       </ul>
     </div>
-    <a className="text-[20px] sm:text-2xl md:text-5xl font-semibold hover:cursor-pointer ">E-BookStore</a>
+    <a className="text-2xl md:text-5xl font-semibold hover:cursor-pointer ">E-BookStore</a>
   </div>
   <div className='navbar-end space-x-3'>
   <div className="navbar-center hidden lg:flex">
