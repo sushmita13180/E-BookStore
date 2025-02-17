@@ -80,7 +80,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
     </ul>
   </div>
-  <div className='hidden md:block'>
+  <div className='hidden md:block w-[225px]'>
   <label className="border rounded-md px-3 py-2 flex items-center gap-2">
   <input type="text" className="grow outline-none px-1 rounded-md " placeholder="Search" />
   <svg
