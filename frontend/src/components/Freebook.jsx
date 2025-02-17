@@ -60,7 +60,7 @@ function Freebook() {
   };
   return (
     <>
-    <div className='max-w-screen-xl container mx-auto md:px-20  pl-11'>
+    <div className='max-w-screen-xl container mx-auto md:px-20 px-4 my-12 md:mt-24 '>
       <div><h1 className='text-2xl font-bold'>Free Offered Courses</h1>
       <p className='mt-2 text-justify'>
       <h1 className='text-pink-600'>Get Your FREE E-Book Today!</h1>
