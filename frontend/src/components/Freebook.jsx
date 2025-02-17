@@ -67,7 +67,7 @@ function Freebook() {
 Start Your Reading Journey – For Free!
 We believe that everyone should have access to great stories and knowledge, which is why we're offering a FREE E-Book for a limited time! Whether you're a fan of thrilling mysteries, captivating romance, or inspiring self-help, we’ve got something for you to enjoy – on the house.
 </p></div>
-    <div className='max-w-screen-xl container mx-auto md:px-20 px-4 my-3 '>
+    <div className='max-w-screen-xl  '>
     <Slider {...settings}>
         {book.map((card)=>(<Card card={card} key={card.id} />))}
       </Slider>
