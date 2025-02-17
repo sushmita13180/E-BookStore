@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <div className={`max-w-screen-xl container mx-auto md:px-20  fixed top-0 right-0 left-0 px-4 z-50 ${sticky?'sticky-navbar shadow-md bg-base-200 transition-all duration-300 ease-in-out ':""}` }>
       <div className="navbar ">
-  <div className="navbar-start">
+  <div className="navbar-start min-w-80">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
@@ -68,7 +68,7 @@ function Navbar() {
       <li><Link to="/about">About</Link></li>
       </ul>
     </div>
-    <a className="text-2xl md:text-5xl font-semibold hover:cursor-pointer ">E-BookStore</a>
+    <a className="text-2xl md:text-5xl font-semibold hover:cursor-pointer flex">E-BookStore</a>
   </div>
   <div className='navbar-end space-x-3'>
   <div className="navbar-center hidden lg:flex">
