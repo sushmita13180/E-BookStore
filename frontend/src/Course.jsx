@@ -31,8 +31,8 @@ function Course() {
        </div> 
        <button className='bg-pink-600 px-3 py-2 rounded-md text-white mt-5'><Link to='/'>Back</Link></button>
       </div>
-      <div className='flex justify-center items-center gap-3'>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+      <div className='flex justify-center items-center gap-2'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-2'>
       {book.map((card)=>(<Card  key={card.id} card={card}/>))}
       </div>
       </div>
