@@ -69,7 +69,7 @@ function Navbar() {
       </ul>
     </div>
     {/* <a href="/"><img src="./logo1.png" alt=""  className='w-28'/></a> */}
-    <a className=" text-2xl md:text-5xl font-semibold hover:cursor-pointer ">E-Book Store</a>
+    <a className="text-[20px] sm:text-2xl md:text-5xl font-semibold hover:cursor-pointer ">E-Book Store</a>
   </div>
   <div className='navbar-end space-x-3'>
   <div className="navbar-center hidden lg:flex">

@@ -23,11 +23,15 @@ function Course() {
   return (
     <div className='max-w-screen-xl container mx-auto md:px-20 px-4 my-12 md:mt-24 text-center'>
       <Navbar />
-      <div className='text-center mt-[70px] md:mt-6'> 
+      <div className='text-center mt-[100px] md:mt-6'> 
       <h1 className='text-2xl md:text-3xl  font-semibold'>We're delighted to have you <span className='text-pink-500'>Here!:)</span></h1>
        <div className='mt-7 '>
-       <p className='text-justify'>Lorem ipsum dolor sit amet coctetur adipisicing elit. Soluta ui akjd oue ullam voluptatum itaque, rendus quaerat porro impedit omnis corrupti neque Lorem ipsum dolor sit amet coctetur adipisicing elit. Soluta ui akjd oue ullam voluptatum itaque, rendus quaerat porro impedit omnis corrupti neque </p>
-       <span className='text-center'>adipisci ad enim libero hic reprehenderit a, debitis laboriosam nesciunt maiores.</span>
+       <p className='text-justify'>
+     Ready to Read?
+       Start exploring our library today and dive into your next favorite book. Simply sign up, select your plan, and start reading instantly!
+
+Unlock a world of captivating stories, knowledge, and adventure with our premium collection of eBooks. Whether you're into thrilling fiction, self-development, business, or inspiring memoirs, our extensive library has something for every reader. </p>
+       <span className='text-center'> Discover the Best Reads – Anytime, Anywhere</span>
        </div> 
        <button className='bg-pink-600 px-3 py-2 rounded-md text-white mt-5'><Link to='/'>Back</Link></button>
       </div>
